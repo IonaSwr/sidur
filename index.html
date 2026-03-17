@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ברכת המזון נוסח ספרד</title>
+    <script>
+        async function fetchData() {
+            const response = await fetch('path/to/your/jsonfile.json'); // Update the path to your JSON file
+            const data = await response.json();
+            document.getElementById('content').innerHTML = data.birkatHamazon; // Assuming your JSON has this field
+        }
+
+        window.onload = fetchData;
+    </script>
+</head>
+<body>
+    <h1>ברכת המזון נוסח ספרד</h1>
+    <div id="content">
+        Loading...
+    </div>
+</body>
+</html>
